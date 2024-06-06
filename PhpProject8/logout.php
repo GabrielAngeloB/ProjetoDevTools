@@ -2,7 +2,9 @@
     session_start();
     session_unset();
     session_destroy();
-    header('location:logcad.php');
+    echo "<script> 
+                window.location.href = 'logcad.php';
+            </script>";
 ?>
 
 

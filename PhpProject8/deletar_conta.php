@@ -10,9 +10,13 @@ if (isset($_POST['deletar'])) {
     if (!$conecta->query($sql)) {
             echo "Erro ao atualizar ao excluir o usuario: " . $conecta->error . "<br>";
         }else {
-            header("Location:logcad.php");
+            echo "<script> 
+                window.location.href = 'logcad.php';
+            </script>";
         }
-        header("Location:logcad.php");
+        echo "<script> 
+                window.location.href = 'logcad.php';
+            </script>";
 }else {
     echo "teste";
 }

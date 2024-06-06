@@ -52,7 +52,9 @@ if ($confsenha == $senha) {
             if ($conecta->query($sql) === TRUE) {
                 $login = $email;
                 $senha = $senha;
-                header('location:logcad.php');
+                echo "<script> 
+                window.location.href = 'logcad.php';
+            </script>";
                 $ok = true;
             } else {
                 $ok = false;
@@ -60,7 +62,9 @@ if ($confsenha == $senha) {
         }
     }
 }else {
-    header('location:logcad.php');
+    echo "<script> 
+                window.location.href = 'logcad.php';
+            </script>";
 }
 
 

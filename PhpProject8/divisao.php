@@ -106,7 +106,7 @@ $resultado = $conecta->query($sql);
         <div class="card shadow-sm" style="width: 500px; margin:auto; color:white;">
             <div class="card-body">
                 <h2 class="card-title text-center">Calculadora de Divisão</h2>
-                <p class="card-text" style='text-align:center; font-size:20px'>Entre com dois números e clique em "Divitir".</p>
+                <p class="card-text" style='text-align:center; font-size:20px'>Entre com dois números e clique em "Dividir".</p>
 
                 <div class="mb-3">
                     <label for="numero1" class="form-label">Número 1</label>
@@ -118,7 +118,7 @@ $resultado = $conecta->query($sql);
                 </div>
                 <br>
                 <p id="resultado" class="mt-3 text-center"></p>
-                <button type="button" style='text-align:center;  margin-left:43%;' class="btn btn-primary w-100" onclick="somar()">Divitir</button>
+                <button type="button" style='text-align:center;  margin-left:43%;' class="btn btn-primary w-100" onclick="somar()">Dividir</button>
 
 
             </div>

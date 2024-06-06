@@ -32,7 +32,9 @@ $resultado = $conecta->query($sql);
 if ($resultado->num_rows > 0) {
     $sql2 = "UPDATE usuario SET senha='".md5($senha_nova)."' WHERE id_usuario = $id_usuario";
     $resultado = $conecta->query($sql2);
-    header('Location:editar_usuario.php');
+    echo "<script> 
+                window.location.href = 'editar_usuario.php';
+            </script>";
 }else {
     echo "<script>
                 alert('Alguma das senhas não coincidem!');
