@@ -39,7 +39,6 @@ if ((!isset($_SESSION['login']) == true) and (!isset($_SESSION['senha']) == true
     exit; // Certifique-se de parar a execução do script após redirecionar
 }
 
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome_ferramenta = $_POST['nome_ferramenta'];
     $desc_ferramenta = $_POST['desc_ferramenta'];

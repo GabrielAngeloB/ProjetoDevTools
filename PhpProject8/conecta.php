@@ -1,9 +1,9 @@
 <?php
 
-$nome_servidor = "sql10.freesqldatabase.com";
-$nome_usuario = "sql10712214";
-$senhabanco = "FlbEkTpNzv";
-$banco = "sql10712214";
+$nome_servidor = "sql10.freemysqlhosting.net";
+$nome_usuario = "sql10712210";
+$senhabanco = "1DDLGEZ7Ba";
+$banco = "sql10712210";
 
 $conecta = new mysqli($nome_servidor, $nome_usuario, $senhabanco, $banco);
 if ($conecta->connect_error) {

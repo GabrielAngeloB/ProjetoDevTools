@@ -118,27 +118,30 @@ $logado = $_SESSION['login'];
 </div>
 
 <script type="text/javascript">
-    function raizquadrada() {
-        var num1 = parseFloat(document.getElementById("numero1").value);
-        var num2 = parseFloat(document.getElementById("numero2").value);
-        if (num2 != 2 || num2 != 3) {
-            var resultado = "asdsadas";
-        }
-        if(num2 == 2) {
-           var resultado = Math.sqrt(num1); 
-        }
-        if(num2 == 3) {
-           var resultado = Math.cbrt(num1); 
-        }
+   function raizquadrada() {
+    var num1 = parseFloat(document.getElementById("numero1").value);
+    var num2 = parseFloat(document.getElementById("numero2").value);
+    var resultado;
 
-        if (isNaN(resultado)) {
-            document.getElementById("resultado").innerHTML = "<span class='text-danger'>Por favor, insira números válidos.</span>";
-        } else {
-            document.getElementById("resultado").innerHTML = "<strong>Resultado: </strong>" + resultado;
-        }
+    if (num2 != 2 && num2 != 3) {
+        resultado = "asdsadas";
+    } else if (num2 == 2) {
+        resultado = Math.sqrt(num1); 
+    } else if (num2 == 3) {
+        resultado = Math.cbrt(num1); 
     }
+
+    if (isNaN(resultado)) {
+        document.getElementById("resultado").innerHTML = "<span class='text-danger'>Por favor, insira números válidos.</span>";
+    } else {
+        // Arredonda o resultado para três casas decimais
+        var resultadoArredondado = resultado.toFixed(3);
+        document.getElementById("resultado").innerHTML = "<strong>Resultado: </strong>" + resultadoArredondado;
+    }
+}
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
