@@ -136,16 +136,7 @@ if (isset($_SESSION['id_usuario'])) {
                                 </ul>
                             </li>
                         </ul>
-                        <form class="navbar-form navbar-left" role="search" method="get" action="">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="search" name="pesquisa" style="border-radius:5px" placeholder="Pesquisar..." class="form-control">
-                                    <span class="input-group-btn" style="padding-left:5px;">
-                                        <button type="submit" class="btn btn-default" style="border-radius:5px"><span class="glyphicon glyphicon-search"></span></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </form>
+                        
 
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="pagina_usuario.php"><span class="glyphicon glyphicon-user"></span> Perfil</a></li>
