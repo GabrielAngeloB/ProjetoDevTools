@@ -27,13 +27,14 @@ if (strlen($senha_atual) < 8 && strlen($senha_nova)< 8 && strlen($confirmar_senh
     
 }
 if($ok) {
-$sql = "SELECT * from usuario WHERE id_usuario=$id_usuario and senha='".md5($senha_atual)."'";
+$sql = "SELECT * from usuario WHERE id_usuario=$id_usuario and senha_usuario='".md5($senha_atual)."'";
 $resultado = $conecta->query($sql);
 if ($resultado->num_rows > 0) {
-    $sql2 = "UPDATE usuario SET senha='".md5($senha_nova)."' WHERE id_usuario = $id_usuario";
+    $sql2 = "UPDATE usuario SET senha_usuario='".md5($senha_nova)."' WHERE id_usuario = $id_usuario";
     $resultado = $conecta->query($sql2);
     echo "<script> 
-                window.location.href = 'editar_usuario.php';
+        alert('Senha trocada com sucesso');
+                window.location.href = 'pagina_usuario.php';
             </script>";
 }else {
     echo "<script>
