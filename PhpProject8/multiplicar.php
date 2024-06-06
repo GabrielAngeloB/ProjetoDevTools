@@ -117,7 +117,7 @@ $resultado = $conecta->query($sql);
                     <input type="number" class="form-control" id="numero2" placeholder="Digite outro número">
                 </div>
                 <br>
-                <p id="resultado" class="mt-3 text-center"></p>
+                <p id="resultado" class="mt-3 text-center" style='font-size:19px;'></p>
                 <button type="button" style='text-align:center;  margin-left:43%;' class="btn btn-primary w-100" onclick="somar()">Multiplicar</button>
 
 
