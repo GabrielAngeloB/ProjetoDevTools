@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
                 $_SESSION['login'] = $email;
                 $_SESSION['senha'] = $senhalogin;
-                header('location:index.php');
+                echo "<script>window.location.href = 'index.php';</script>";
                 exit;
             } else {
                 $_SESSION['erro1'] = true;
@@ -38,9 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['erro2'] = true;
         echo "<script>
             alert('Dados não conferem!');
-                window.location.href = 'logcad.php';
+                window.location.href = 'index.php';
             </script>";
-        header('location:logcad.php');
         exit;
     }
 }else {
