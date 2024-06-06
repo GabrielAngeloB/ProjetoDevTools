@@ -116,6 +116,7 @@ $logado = $_SESSION['login'];
        
     </div>
 </div>
+    
 
 <script type="text/javascript">
    function raizquadrada() {
@@ -140,8 +141,10 @@ $logado = $_SESSION['login'];
     }
 }
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
