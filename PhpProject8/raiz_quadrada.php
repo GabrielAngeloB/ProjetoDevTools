@@ -99,10 +99,10 @@ $logado = $_SESSION['login'];
     <div class="card shadow-sm" style="width: 500px; margin:auto; color:white;">
     <div class="card-body">
         <h2 class="card-title text-center">Calculadora de Raiz</h2>
-        <p class="card-text" style='text-align:center; font-size:20px'>Entre com dois números e clique em "Somar".</p>
+        <p class="card-text" style='text-align:center; font-size:20px'>Entre com a base e a raiz e clique em "Calcular".</p>
 
         <div class="mb-3">
-            <label for="numero1" class="form-label">Número desejado:</label>
+            <label for="numero1" class="form-label">Número desejado (Base):</label>
             <input type="number" class="form-control" id="numero1" placeholder="Digite um número">
         </div>
         <div class="mb-3">
@@ -111,7 +111,7 @@ $logado = $_SESSION['login'];
         </div>
         <br>
          <p id="resultado" class="mt-3 text-center" style='font-size:19px;'></p>
-        <button type="button" style='text-align:center;  margin-left:43%;' class="btn btn-primary w-100" onclick="raizquadrada()">Somar</button>
+        <button type="button" style='text-align:center;  margin-left:43%;' class="btn btn-primary w-100" onclick="raizquadrada()">Calcular</button>
 
        
     </div>
