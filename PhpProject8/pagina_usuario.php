@@ -48,10 +48,11 @@ if (isset($_SESSION['id_usuario'])) {
     $resultado = $conecta->query($sql);
     if ($resultado->num_rows > 0) {
         while ($linha = $resultado->fetch_assoc()) {
+            date_default_timezone_set('America/Sao_Paulo');
             $nome = $linha['nome_usuario'];
             $email = $linha['email_usuario'];
             $horario = $linha['horario_criado'];
-            $data_formatada = date('d/m/Y h:i:s', strtotime($horario));
+            $data_formatada = date('d/m/Y H:i:s', strtotime($horario));
         }
     }
 }
@@ -61,7 +62,7 @@ if (isset($_SESSION['id_usuario'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar com Bootstrap</title>
+    <title>Página do usuário</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     <style>
         /* Estilos para a barra de navegação */
